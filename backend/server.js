@@ -29,7 +29,11 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../html/index.html"));
 });
 
-const PORT = 3000;
-app.listen(PORT, () => {
-  console.log("Servidor rodando...");
-});
+if (require.main === module) {
+  const PORT = process.env.PORT || 3000;
+  app.listen(PORT, () => {
+    console.log(`Servidor rodando na porta ${PORT}`);
+  });
+}
+
+module.exports = app;
