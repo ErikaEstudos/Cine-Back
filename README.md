@@ -40,7 +40,7 @@ O backend do **Cine Erika** oferece:
 1. **Clone este repositório:**
 
    ```bash
-   git clone https://github.com/ErikaEstudos/Cine-Erika-Back.git
+   git clone https://github.com/erikaoliveiracorrea/Cine-Erika-Back.git
 
    ```
 
